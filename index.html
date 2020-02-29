@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Carson's Birthday Party | Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins|Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>You're Invited!</h1>
+    <p>Please take some time to answer the following questions about Carson's birthday party.</p>
+  </header>
+  <main>
+    <section id="survey">
+      <form>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Enter your name" required>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="Enter your email" required>
+        <label for="number-of-guests">How many of you will be attending?</label>
+        <input id="number-of-guests" name="number-of-guests" type="number" placeholder="Enter the number of guests" min="1" max="8" required>
+        <fieldset>
+          <legend>What time of day would you prefer to have this party?</legend>
+          <label for="morning">
+            <input id="morning" name="time-of-day" value="morning" type="radio" required>
+            Morning
+          </label>
+          <label for="afternoon">
+            <input id="afternoon" name="time-of-day" value="afternoon" type="radio">
+            Afternoon
+          </label>
+          <label for="night">
+            <input id="night" name="time-of-day" value="night" type="radio">
+            Night
+          </label>
+        </fieldset>
+        <label for="main-entrée">Select what you'd like the main entrée to be</label>
+        <div class="select-wrapper">
+          <select id="main-entrée" name="main-entrée" required>
+            <option value="" selected disabled>Select an entrée</option>
+            <option value="pizza">Pizza</option>
+            <option value="sandwiches">Sandwiches</option>
+            <option value="pasta">Pasta</option>
+            <option value="hamburgers-and-hotdogs">Hamburgers and Hotdogs</option>
+            <option value="chicken-and-rice">Chicken and Rice</option>
+          </select>
+        </div>
+        <fieldset>
+          <legend>Choose which desserts you would like to see at the party:</legend>
+          <label for="cake">
+            <input id="cake" type="checkbox" name="cake">
+            Cake
+          </label>
+          <label for="cupcakes">
+            <input id="cupcakes" type="checkbox" name="cupcakes">
+            Cupcakes
+          </label>
+          <label for="pie">
+            <input id="pie" type="checkbox" name="pie">
+            Pie
+          </label>
+          <label for="cookies">
+            <input id="cookies" type="checkbox" name="cookies">
+            Cookies
+          </label>
+          <label for="doughnuts">
+            <input id="doughnuts" type="checkbox" name="doughnuts">
+            Doughnuts
+          </label>
+          <label for="brownies">
+            <input id="brownies" type="checkbox" name="brownies">
+            Brownies
+          </label>
+          <label for="cinnamon-rolls">
+            <input id="cinnamon-rolls" type="checkbox" name="cinnamon-rolls">
+            Cinnamon Rolls
+          </label>
+          <label for="ice-cream">
+            <input id="ice-cream" type="checkbox" name="ice-cream">
+            Ice Cream
+          </label>
+          <label for="cotton-candy">
+            <input id="cotton-candy" type="checkbox" name="cotton-candy">
+            Cotton Candy
+          </label>
+        </fieldset>
+        <label for="other-comments-or-suggestions">Any other comments or suggestions? (<span class="clue">optional</span>)</label>
+        <textarea id="other-comments-or-suggestions" name="other-comments-or-suggestions" rows="8" cols="80" placeholder="Enter your comments/suggestions here..."></textarea>
+        <input type="submit">
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>
