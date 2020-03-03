@@ -1,3 +1,7 @@
+html {
+  font-size: calc(20px + 0.25vw);
+}
+
 body {
   background: linear-gradient(rgba(25, 41, 101, 0.75), rgba(25, 41, 101, 0.75)), url('Images/birthday_decor_background.jpg');
   background-attachment: fixed;
@@ -6,20 +10,19 @@ body {
   background-size: cover;
   color: white;
   font-family: 'Source Sans Pro';
-  font-size: 1.5rem;
   text-align: center;
 }
 
 h1 {
   font-family: 'Poppins';
-  font-size: 3rem;
+  font-size: 2.5rem;
   letter-spacing: 1.5px;
   margin-bottom: 0;
 }
 
 header p {
   font-style: italic;
-  margin: 0.5rem 1rem 0;
+  margin: 0.25rem 0.5rem 0;
   text-shadow: 2px 0 1px black;
 }
 
@@ -29,8 +32,8 @@ form {
   border-radius: 7px;
   display: flex;
   flex-direction: column;
-  margin: 2rem auto;
-  padding: 2.5rem;
+  margin: 1.5rem auto;
+  padding: 2rem;
   text-align: left;
   max-width: 750px;
 }
@@ -43,7 +46,7 @@ form {
 
 label, legend {
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 fieldset label {
@@ -51,27 +54,27 @@ fieldset label {
 }
 
 .clue {
-  font-size: 1.25rem;
+  font-size: 0.9rem;
 }
 
 input, select, textarea {
   border-color: transparent;
   border-radius: 5px;
   box-sizing: border-box;
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
-  padding: 0.5rem;
+  font-size: 1.1rem;
+  margin-bottom: 1.25rem;
+  padding: 0.4rem;
   width: 100%;
 }
 
 input[type="radio"], input[type="checkbox"] {
-  margin: 0.5rem 0.5rem 0 0;
+  margin: 0.25rem 0.25rem 0 0;
   width: auto;
 }
 
 fieldset {
   border: none;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   padding: 0;
 }
 
@@ -91,11 +94,11 @@ select {
   content: '▼';
   color: #434B67;
   font-family: FontAwesome;
-  font-size: 1.25rem;
+  font-size: 0.8rem;
   font-weight: bold;
   position: absolute;
-  top: 12px;
-  right: 15px;
+  top: 17px;
+  right: 17px;
   pointer-events: none;
 }
 
@@ -110,7 +113,7 @@ select:invalid {
 input[type="submit"] {
   border-radius: 3px;
   background-color: #8db600;
-  margin: 2rem 0 0;
+  margin: 1.5rem 0 0;
   transition: background-color 0.2s;
 }
 
