@@ -13,16 +13,25 @@ body {
   text-align: center;
 }
 
+@media only screen and (max-width: 767px) {
+  body {
+    background: linear-gradient(rgba(25, 41, 101, 0.75), rgba(25, 41, 101, 0.75)), url('Images/birthday_decor_background_mobile.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 h1 {
   font-family: 'Poppins';
   font-size: 2.5rem;
-  letter-spacing: 1.5px;
   margin-bottom: 0;
 }
 
 header p {
   font-style: italic;
-  margin: 0.25rem 0.5rem 0;
+  margin: 5px 15px 0;
   text-shadow: 2px 0 1px black;
 }
 
@@ -32,8 +41,8 @@ form {
   border-radius: 7px;
   display: flex;
   flex-direction: column;
-  margin: 1.5rem auto;
-  padding: 2rem;
+  margin: 25px auto;
+  padding: calc(10px + 1.5vw);
   text-align: left;
   max-width: 750px;
 }
@@ -46,11 +55,21 @@ form {
 
 label, legend {
   display: block;
-  margin-bottom: 0.25rem;
+  margin-bottom: 5px;
 }
 
 fieldset label {
   margin: 0;
+}
+
+.choice-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+fieldset > .choice-group:not(:last-child) {
+  margin-bottom: 5px;
 }
 
 .clue {
@@ -61,20 +80,21 @@ input, select, textarea {
   border-color: transparent;
   border-radius: 5px;
   box-sizing: border-box;
-  font-size: 1.1rem;
-  margin-bottom: 1.25rem;
-  padding: 0.4rem;
+  font-family: 'Source Sans Pro';
+  font-size: 0.9rem;
+  margin-bottom: 25px;
+  padding: 8px;
   width: 100%;
 }
 
 input[type="radio"], input[type="checkbox"] {
-  margin: 0.25rem 0.25rem 0 0;
+  margin: 0 10px 0 0;
   width: auto;
 }
 
 fieldset {
   border: none;
-  margin-bottom: 1.25rem;
+  margin-bottom: 25px;
   padding: 0;
 }
 
@@ -97,8 +117,8 @@ select {
   font-size: 0.8rem;
   font-weight: bold;
   position: absolute;
-  top: 17px;
-  right: 17px;
+  top: 12px;
+  right: 15px;
   pointer-events: none;
 }
 
@@ -113,8 +133,8 @@ select:invalid {
 input[type="submit"] {
   border-radius: 3px;
   background-color: #8db600;
-  margin: 1.5rem 0 0;
-  transition: background-color 0.2s;
+  margin: 25px 0 0;
+  transition: background-color 0.4s;
 }
 
 input[type="submit"]:hover {
