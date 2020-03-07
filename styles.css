@@ -62,7 +62,7 @@ form {
 label, legend {
   display: block;
   margin-bottom: 5px;
-  white-space: normal;
+  white-space: normal !important;
 }
 
 fieldset label {
@@ -94,7 +94,7 @@ input, select, textarea {
   width: 100%;
 }
 
-input[type="radio"], input[type="checkbox"] {
+fieldset input {
   margin: 0 10px 0 0;
   width: auto;
 }
@@ -111,7 +111,6 @@ select {
 	background-repeat: no-repeat, repeat;
 	background-position: right 0.7rem top 50%, 0 0;
   background-size: 0.65rem auto, 100%;
-  color: black;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -121,7 +120,7 @@ select option {
   color: black;
 }
 
-select:invalid {
+select:invalid, option[value=""] {
   color: gray;
 }
 
