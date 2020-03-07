@@ -30,7 +30,7 @@ header {
 h1 {
   font-family: 'Poppins';
   font-size: 2.5rem;
-  letter-spacing: normal;
+  font-weight: normal;
   line-height: 1.25;
   margin: 20px auto 0;
 }
@@ -105,13 +105,19 @@ fieldset {
 }
 
 select {
-  -moz-appearance: none;
-	-webkit-appearance: none;
-  appearance: none;
+  background-color: white !important;
   background-image: url('http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png');
 	background-repeat: no-repeat, repeat;
 	background-position: right 0.7rem top 50%, 0 0;
-	background-size: 0.65rem auto, 100%;
+  background-size: 0.65rem auto, 100%;
+  color: black;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select option {
+  color: black;
 }
 
 select:invalid {
@@ -127,6 +133,7 @@ input[type="submit"] {
   background-color: #8db600;
   margin-bottom: 0;
   transition: background-color 0.4s;
+  -webkit-appearance: none;
 }
 
 input[type="submit"]:hover {
