@@ -10,6 +10,7 @@ body {
   background-size: cover;
   color: white;
   font-family: 'Source Sans Pro';
+  margin: 0;
   text-align: center;
 }
 
@@ -24,19 +25,19 @@ body {
 }
 
 header {
-  margin: 0 15px;
+  margin: 20px;
 }
 
 h1 {
   font-family: 'Poppins';
   font-size: 2.5rem;
   line-height: 1.25;
-  margin: 20px auto 0;
+  margin-bottom: 10px;
 }
 
 header p {
   font-style: italic;
-  margin: 7px auto 0;
+  margin-top: 0;
   text-shadow: 2px 0 1px black;
 }
 
@@ -46,7 +47,7 @@ form {
   border-radius: 7px;
   display: flex;
   flex-direction: column;
-  margin: 20px auto;
+  margin: 0 auto;
   padding: calc(10px + 1.5vw);
   text-align: left;
   max-width: 750px;
@@ -61,6 +62,7 @@ form {
 label, legend {
   display: block;
   margin-bottom: 5px;
+  white-space: normal;
 }
 
 fieldset label {
