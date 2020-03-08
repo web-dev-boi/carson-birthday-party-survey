@@ -24,19 +24,22 @@
         <label for="number-of-guests">How many of you will be attending?</label>
         <input id="number-of-guests" name="number-of-guests" type="number" placeholder="Enter the number of guests" min="1" max="8" required>
         <fieldset>
-          <legend>What time of day would you prefer to have this party?</legend>
-          <div class="choice-group">
-            <input id="morning" name="time-of-day" value="morning" type="radio" required>
-            <label for="morning">Morning</label>
-          </div>
-          <div class="choice-group">
-            <input id="afternoon" name="time-of-day" value="afternoon" type="radio">
-            <label for="afternoon">Afternoon</label>
-          </div>
-          <div class="choice-group">
-            <input id="night" name="time-of-day" value="night" type="radio">
-            <label for="night">Night</label>
-          </div>
+          <legend><p>What time of day would you prefer to have this party?</p></legend>
+          <input id="morning" name="time-of-day" value="morning" type="radio" required>
+          <label for="morning">
+            <span class="radio"></span>
+            <span>Morning</span>
+          </label>
+          <input id="afternoon" name="time-of-day" value="afternoon" type="radio">
+          <label for="afternoon">
+            <span class="radio"></span>
+            <span>Afternoon</span>
+          </label>
+          <input id="night" name="time-of-day" value="night" type="radio">
+          <label for="night">
+            <span class="radio"></span>
+            <span>Night</span>
+          </label>
         </fieldset>
         <label for="main-entrée">Select what you'd like the main entrée to be</label>
         <select id="main-entrée" name="main-entrée" required>
@@ -48,43 +51,52 @@
           <option value="chicken-and-rice">Chicken and Rice</option>
         </select>
         <fieldset>
-          <legend>Choose which desserts you would like to see at the party:</legend>
-          <div class="choice-group">
-            <input id="cake" type="checkbox" name="cake">
-            <label for="cake">Cake</label>
-          </div>
-          <div class="choice-group">
-            <input id="cupcakes" type="checkbox" name="cupcakes">
-            <label for="cupcakes">Cupcakes</label>
-          </div>
-          <div class="choice-group">
-            <input id="pie" type="checkbox" name="pie">
-            <label for="pie">Pie</label>
-          </div>
-          <div class="choice-group">
-            <input id="cookies" type="checkbox" name="cookies">
-            <label for="cookies">Cookies</label>
-          </div>
-          <div class="choice-group">
-            <input id="doughnuts" type="checkbox" name="doughnuts">
-            <label for="doughnuts">Doughnuts</label>
-          </div>
-          <div class="choice-group">
-            <input id="brownies" type="checkbox" name="brownies">
-            <label for="brownies">Brownies</label>
-          </div>
-          <div class="choice-group">
-            <input id="cinnamon-rolls" type="checkbox" name="cinnamon-rolls">
-            <label for="cinnamon-rolls">Cinnamon Rolls</label>
-          </div>
-          <div class="choice-group">
-            <input id="ice-cream" type="checkbox" name="ice-cream">
-            <label for="ice-cream">Ice Cream</label>
-          </div>
-          <div class="choice-group">
-            <input id="cotton-candy" type="checkbox" name="cotton-candy">
-            <label for="cotton-candy">Cotton Candy</label>
-          </div>
+          <legend><p>Choose which desserts you would like to see at the party:</p></legend>
+          <input id="cake" type="checkbox" name="cake">
+          <label for="cake">
+            <span class="checkbox"></span>
+            <span>Cake</span>
+          </label>
+          <input id="cupcakes" type="checkbox" name="cupcakes">
+          <label for="cupcakes">
+            <span class="checkbox"></span>
+            <span>Cupcakes</span>
+          </label>
+          <input id="pie" type="checkbox" name="pie">
+          <label for="pie">
+            <span class="checkbox"></span>
+            <span>Pie</span>
+          </label>
+          <input id="cookies" type="checkbox" name="cookies">
+          <label for="cookies">
+            <span class="checkbox"></span>
+            <span>Cookies</span>
+          </label>
+          <input id="doughnuts" type="checkbox" name="doughnuts">
+          <label for="doughnuts">
+            <span class="checkbox"></span>
+            <span>Doughnuts</span>
+          </label>
+          <input id="brownies" type="checkbox" name="brownies">
+          <label for="brownies">
+            <span class="checkbox"></span>
+            <span>Brownies</span>
+          </label>
+          <input id="cinnamon-rolls" type="checkbox" name="cinnamon-rolls">
+          <label for="cinnamon-rolls">
+            <span class="checkbox"></span>
+            <span>Cinnamon Rolls</span>
+          </label>
+          <input id="ice-cream" type="checkbox" name="ice-cream">
+          <label for="ice-cream">
+            <span class="checkbox"></span>
+            <span>Ice Cream</span>
+          </label>
+          <input id="cotton-candy" type="checkbox" name="cotton-candy">
+          <label for="cotton-candy">
+            <span class="checkbox"></span>
+            <span>Cotton Candy</span>
+          </label>
         </fieldset>
         <label for="other-comments-or-suggestions">Any other comments or suggestions? (<span class="clue">optional</span>)</label>
         <textarea id="other-comments-or-suggestions" name="other-comments-or-suggestions" rows="8" cols="80" placeholder="Enter your comments/suggestions here..."></textarea>
